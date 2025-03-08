@@ -59,7 +59,7 @@ body {
 }
 
 .quatre {
-  background-image: url("img/fond4.jpg");
+  background-color: #000000;  
   background-size: cover;
   height: calc(100vh - 80px);
   margin-top: 0;
