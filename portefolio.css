@@ -166,7 +166,12 @@ nav ul li a {
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold; /* Texte en gras */
+  display: inline-block; /* Permet d'appliquer transform */
+  transform: translateY(-15px); /* Relever légèrement les mots */
 }
+
 
 a.active,
 a:hover {
