@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="portefolio.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <title>portfolio</title>
 </head>
 <body>
@@ -45,7 +47,9 @@
                     <div class="text-content">
                         <h1 class="text3">Mes compétences</h1>
                         <p class="text4">
-                            Passionné par l’informatique, je maîtrise HTML, CSS, Python et C++ pour le développement web et logiciel. À l’aise avec Linux, j’ai des connaissances en administration système et réseaux (Cisco). J’utilise VS Code et GitHub pour coder et gérer mes projets. Curieux et motivé, je cherche toujours à apprendre et innover.                       </p>
+                            Passionné par l’informatique, je maîtrise HTML, CSS, Python et C++ pour le développement web et logiciel. À l’aise avec Linux, j’ai des connaissances en administration système et réseaux (Cisco). J’utilise VS Code et GitHub pour coder et gérer mes projets. Curieux et motivé, je cherche toujours à apprendre et innover.
+                        </p>
+                        
                     </div>
                 </div>
             </div>
@@ -54,10 +58,16 @@
             <div class="slide trois">
                 <div class="content">
                     <div class="text-content">
-                        <h1 class="text4">Projets réalisés</h1>
-                        <p class="text4">
+                        <h1 class="text5">Projets réalisés</h1>
+                        <p class="text6">
                             Découvrez mes projets réalisés dans le cadre de mes études et de mes passions.
                         </p>
+                        <!-- Carrousel -->
+                        <div class="carousel">
+                            <div><img src="images/astropi.png" alt="Projet 1"></div>
+                            <div><img src="images/voiture.png" alt="Projet 2"></div>
+                            <div><img src="images/projet3.jpg" alt="Projet 3"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -75,5 +85,19 @@
             </div>
         </div>
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
 </body>
 </html>

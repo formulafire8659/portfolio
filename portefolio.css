@@ -114,15 +114,26 @@ body {
   line-height: 1.6;
 }
 
+.text5 {
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  line-height: 1.6;
+}
+
+.text6 {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+  line-height: 1.6;
+}
+
+
 .image {
   width: 25%;
   margin-right: 20px;
 }
 
-.image2 {
-  width: 150px;
-  margin-right: 20px;
-}
 
 .icon_logo {
   display: flex;
@@ -317,4 +328,35 @@ a:hover {
   .image2 {
     width: 80px;
   }
+}
+
+/* Styles pour le carrousel */
+.carousel {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #000;
+}
+
+.slick-dots li button:before {
+  color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #4c1bff;
+}
+.img2{
+  width : 10vw;
+  height : 10vh;
+  max-width : 200px;
+  max-height : 150px;
 }
