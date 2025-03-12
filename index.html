@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="portefolio.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>portfolio</title>
 </head>
 <body>
@@ -16,8 +17,8 @@
         </label>
         <label class="logo">mon portfolio</label>
         <ul>
-            <li><a href="#">acceuil</a></li>
-            <li><a href="#">projet</a></li>
+            <li><a href="index.html">acceuil</a></li>
+            <li><a href="#projet">projet</a></li>
             <li><a href="images/CV.pdf">cv</a></li>
         </ul>
     </nav>
@@ -49,37 +50,59 @@
                         <p class="text4">
                             Passionné par l’informatique, je maîtrise HTML, CSS, Python et C++ pour le développement web et logiciel. À l’aise avec Linux, j’ai des connaissances en administration système et réseaux (Cisco). J’utilise VS Code et GitHub pour coder et gérer mes projets. Curieux et motivé, je cherche toujours à apprendre et innover.
                         </p>
-                        
                     </div>
                 </div>
             </div>
 
             <!-- Slide 3 -->
-            <div class="slide trois">
-                <div class="content">
-                    <div class="text-content">
-                        <h1 class="text5">Projets réalisés</h1>
-                        <p class="text6">
-                            Découvrez mes projets réalisés dans le cadre de mes études et de mes passions.
-                        </p>
-                        <!-- Carrousel -->
-                        <div class="carousel">
-                            <div><img src="images/astropi.png" alt="Projet 1"></div>
-                            <div><img src="images/voiture.png" alt="Projet 2"></div>
-                            <div><img src="images/projet3.jpg" alt="Projet 3"></div>
+            <div id="projet">
+                <div class="slide trois">
+                    <div class="content">
+                        <div class="text-content">
+                            <h1 class="text5">Projets réalisés</h1>
+                            <p class="text6">
+                                Découvrez mes projets réalisés dans le cadre de mes études et de mes passions.
+                            </p>
+                            <!-- Carrousel -->
+                            <div class="carousel">
+                                <div><img src="images/astropi.png" alt="Projet 1"></div>
+                                <div><img src="images/voiture.png" alt="Projet 2"></div>
+                                <div><img src="images/projet3.jpg" alt="Projet 3"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Slide 4 -->
+            <!-- Slide 4 : Page de contact -->
             <div class="slide quatre">
                 <div class="content">
                     <div class="text-content">
                         <h1 class="text1">Contactez-moi</h1>
                         <p class="text2">
-                            Vous pouvez me contacter via mon email ou mes réseaux sociaux.
+                            Vous pouvez me contacter via mon email, mes réseaux sociaux ou en remplissant le formulaire ci-dessous.
                         </p>
+                        
+                        <!-- Icônes de contact -->
+                        <div class="contact-icons">
+                            <a href="mailto:theo.defournier1@gmail.com" target="_blank" class="icon-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://github.com/formulafire8659" target="_blank" class="icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://instagram.com/formulafire86" target="_blank" class="icon-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+
+                        <!-- Formulaire de contact -->
+                        <form class="contact-form" action="https://formspree.io/f/mqapkgje" method="POST">
+                            <input type="text" name="name" placeholder="Votre nom" required>
+                            <input type="email" name="email" placeholder="Votre email" required>
+                            <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                            <button type="submit">Envoyer</button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -360,3 +360,76 @@ a:hover {
   max-width : 200px;
   max-height : 150px;
 }
+
+/* Styles pour les icônes de contact */
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.icon-link {
+  color: #FFFFFF;
+  font-size: 30px;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.icon-link:hover {
+  color: #4c1bff;
+}
+
+/* Styles pour le formulaire de contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #4c1bff;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #3a0fd6;
+}
+
+/* Responsive pour les icônes et le formulaire */
+@media (max-width: 768px) {
+  .contact-icons {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .icon-link {
+      margin: 10px 0;
+  }
+
+  .contact-form {
+      width: 90%;
+  }
+}
