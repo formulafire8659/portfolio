@@ -154,7 +154,7 @@ h1 {
 
 /* Styles pour la navigation */
 nav {
-  background: #080f15;
+  background: #000000;
   height: 80px;
   width: 100%;
 }
@@ -260,7 +260,7 @@ a:hover {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: #2c3e50;
+    background: #000000;
     top: 80px;
     left: -100%;
     text-align: center;
@@ -280,7 +280,7 @@ a:hover {
   a:hover,
   a.active {
     background: none;
-    color: #1e2e3b;
+    color: #000000;
   }
 
   #check:checked~ul {
@@ -379,11 +379,12 @@ a:hover {
   color: #FFFFFF;
   font-size: 30px;
   margin: 0 15px;
-  transition: color 0.3s ease;
+  transition: .5s;
 }
 
 .icon-link:hover {
   color: #4c1bff;
+  border-radius: 8px;
 }
 
 /* Styles pour le formulaire de contact */
@@ -415,7 +416,7 @@ a:hover {
   background-color: #4c1bff;
   color: #FFFFFF;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -423,6 +424,7 @@ a:hover {
 
 .contact-form button:hover {
   background-color: #3a0fd6;
+  border-radius: 8px;
 }
 
 /* Responsive pour les icônes et le formulaire */
