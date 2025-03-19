@@ -152,8 +152,9 @@ nav ul {
 nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
-}
+    margin: 0 ;
+    margin-top: -7%;
+  }
 
 nav ul li a {
     color: white;

@@ -182,13 +182,13 @@ nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
+  margin-top: -7%;
 }
 
 nav ul li a {
   color: white;
   font-size: 17px;
   padding: 7px 13px;
-  padding-top: -5px;
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
