@@ -170,9 +170,8 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    line-height: 80px;
-    margin: 0 ;
-    margin-top: -7%;
+    margin: 0 5px;
+    margin-top: 5%;
   }
 
 nav ul li a {
@@ -184,7 +183,6 @@ nav ul li a {
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
-    transform: translateY(-15px);
 }
 
 a.active, a:hover {
@@ -305,6 +303,11 @@ a.active, a:hover {
         font-size: 14px;
     }
 
+    .text3{
+        margin-top: -5px;
+
+    }
+
     .image {
         width: 160px;
         margin-right: 0;
@@ -319,11 +322,19 @@ a.active, a:hover {
 @media (max-width: 480px) {
     .text1 {
         font-size: 20px;
-    }
-
-    .text2 {
+      }
+    
+      .text2 {
         font-size: 12px;
-    }
+      }
+    
+      .text4 {
+        font-size: 12px;
+      }
+    
+      .text6 {
+        font-size: 12px;
+      }
 
     .image {
         width: 120px;

@@ -180,9 +180,8 @@ nav ul {
 
 nav ul li {
   display: inline-block;
-  line-height: 80px;
   margin: 0 5px;
-  margin-top: -7%;
+  margin-top: 5%;
 }
 
 nav ul li a {
@@ -194,7 +193,6 @@ nav ul li a {
   text-decoration: none;
   font-weight: bold; /* Texte en gras */
   display: inline-block; /* Permet d'appliquer transform */
-  transform: translateY(-15px); /* Relever légèrement les mots */
 }
 
 
@@ -339,6 +337,14 @@ a:hover {
   }
 
   .text2 {
+    font-size: 12px;
+  }
+
+  .text4 {
+    font-size: 12px;
+  }
+
+  .text6 {
     font-size: 12px;
   }
 
