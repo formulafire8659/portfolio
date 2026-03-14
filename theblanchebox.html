@@ -21,7 +21,7 @@
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="projet.html">Projet</a></li>
-            <li><a href="images/CV.pdf">CV</a></li>
+            <li><a href="images/CV_portfolio.pdf">CV</a></li>
         </ul>
     </nav>
 
@@ -29,14 +29,14 @@
             <!-- Slide 1 -->
             <div class="slide un">
                 <div class="content">
-                    <div class="image hidden"><img src="images/box1.jpg" alt="Photo astropi"></div>
+                    <div class="image hidden"><img src="images/logo_ppe.png" alt="Photo MDS49"></div>
                     <div class="text-content hidden">
-                        <h1 class="text1">The Blanche Box</h1>
+                        <h1 class="text1">Qualité de service informatique MDS49</h1>
                         <p class="text2">
-                            dans le cadre du grand oral du Bac, nous avont eu a a imaginer et realiser un projet au choix <br>
-                            notre projet etait de réaliser une boite noir d'avoin autonome, possedant la capacités d'enregistrer <br>
-                             un maximum d'informations durant le vole pour un coût le moins élever possible. les infos de vol etait enregistrer <br>
-                             sur une cart micro SD et envoyer par raadio via le résaux LoRa. 
+                            Dans le cadre du groupe OXAM, une mission nous a été confiée par le Conseil Départemental de Maine-et-Loire <br>
+                            pour intervenir à la Maison Départementale des Sports (MDS49), gérée par le CDOS 49. <br>
+                            L'objectif était d'améliorer l'infrastructure informatique de la structure afin de mieux répondre <br>
+                            aux besoins des associations sportives locales.
                         </p>
                     </div>
                 </div>
@@ -45,25 +45,36 @@
             <!-- Slide 2 -->
             <div class="slide deux">
                 <div class="content">
-                    <div class="image hidden center"><img src="images/box3.jpg" alt="Langages"></div>
+                    <div class="image hidden center"><img src="images/infraPPE3.png" alt="Infrastructure MDS49"></div>
                     <div class="text-content hidden">
-                        <h1 class="text3">Objectifs</h1>
+                        <h1 class="text3">Missions</h1>
                         <p class="text4">
-                            L'objectif de ce projet était de concevoir et de réaliser une boîte noire légère et économique, <br> capable d'être installée sur n'importe quel type d'avion. Cette boîte noire devait permettre d'enregistrer <br> et de transmettre des informations essentielles telles que la vitesse, l'altitude, <br> ainsi que des données environnementales comme le taux de CO2 et le taux d'humidité dans l'air.
+                            Le projet comprenait plusieurs missions clés : <br>
+                            <strong>Migration DHCP</strong> — transfert du rôle DHCP vers un serveur Linux avec création d'un DNS dynamique. <br>
+                            <strong>Supervision</strong> — installation et configuration de Zabbix pour surveiller les serveurs et envoyer des alertes par mail. <br>
+                            <strong>Contrôleur de domaine</strong> — mise en place d'un contrôleur Windows répliqué et redondé pour la salle multimédia. <br>
+                            <strong>Sauvegarde</strong> — automatisation quotidienne des sauvegardes des répertoires critiques via crontab et SSH. <br>
+                            <strong>Intranet</strong> — déploiement d'un site mds49.local avec analyse des logs et protection contre les attaques par force brute.
+                        </p>
                     </div>
                 </div>
             </div>
 
             <!-- Slide 3 -->
-                <div class="slide trois">
-                    <div class="content">
-                        <div class="image hidden"><img src="images/box2.jpg" alt="Langages"></div>
-                        <div class="text-content hidden">
-                            <h1 class="text5">Conclusion</h1>
-                            <p class="text6"> "The Blanche Box" est une boîte noire économique qui capte, stocke et transmet des données (vitesse, altitude, CO2, humidité) via LoRa. Ce projet m'a permis de progresser en Python (programmation de capteurs) et en réseaux IoT, tout en renforçant mes compétences en systèmes embarqués et en résolution de problèmes techniques.</p> 
-                        </div>
+            <div class="slide trois">
+                <div class="content">
+                    <div class="image hidden"><img src="images/zabbix.png" alt="Technologies utilisées"></div>
+                    <div class="text-content hidden">
+                        <h1 class="text5">Conclusion</h1>
+                        <p class="text6">
+                            Ce projet m'a permis de mettre en pratique des compétences en administration système et réseau dans un contexte professionnel réel. 
+                            J'ai configuré des serveurs Windows Server 2022 (Active Directory, DFS, réplication), des services Linux (DHCP, DNS avec Bind9, Apache, Zabbix), 
+                            et mis en place des solutions de sauvegarde automatisée via SSH et crontab. 
+                            Ce PPE a renforcé ma maîtrise des infrastructures informatiques, de la supervision réseau et de la sécurité des systèmes.
+                        </p>
                     </div>
                 </div>
+            </div>
 
             <!-- Slide 4 : Page de contact -->
             <div class="slide cinq">
@@ -103,7 +114,7 @@
     <!-- Inclusion des scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="js/index.js"></script> <!-- Inclusion du fichier JavaScript externe -->
+    <script src="js/index.js"></script>
     <script>
         $(document).ready(function(){
             $('.carousel').slick({
