@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/portfolio_pr.css">
+    <link rel="stylesheet" href="css/box.css">
     <link rel="icon" type="image/vnd.icon" href="images/clippe.ico">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
@@ -22,7 +22,6 @@
             <li><a href="index.html">Accueil</a></li>
             <li><a href="projet.html">Projet</a></li>
             <li><a href="images/CV.pdf">CV</a></li>
-
         </ul>
     </nav>
 
@@ -30,11 +29,15 @@
             <!-- Slide 1 -->
             <div class="slide un">
                 <div class="content">
-                    <div class="image hidden"><img src="images/portfolio.png" alt="Photo astropi"></div>
+                    <div class="image hidden"><img src="images/logo_oxam.PNG" alt="Logo Comité d'Agglomération"></div>
                     <div class="text-content hidden">
-                        <h1 class="text1">Portfolio</h1>
+                        <h1 class="text1">Infrastructure réseau Comité d'Agglomération</h1>
                         <p class="text2">
-                            Mon portfolio est un site web que j'ai conçu et développé pour présenter mes projets, <br> ainsi que mes compétences dans le cadre de ma formation en BTS SIO. <br> Il reflète mes connaissances techniques et ma capacité à créer <br> un site web fonctionnelles et esthétiques                        </p>
+                            Dans le cadre du groupe OXAM, une mission nous a été confiée pour moderniser l'infrastructure informatique <br>
+                            du Comité d'Agglomération (AGGLO), dont le réseau était obsolète et ne répondait plus aux besoins des employés. <br>
+                            Nous avons conçu et déployé un réseau complet avec des services distincts pour la Culture et le Sport, <br>
+                            un réseau administratif, une DMZ, ainsi que plusieurs serveurs Windows et Linux.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -42,26 +45,37 @@
             <!-- Slide 2 -->
             <div class="slide deux">
                 <div class="content">
-                    <div class="image hidden"><img src="images/portfolio2.png" alt="Langages"></div>
+                    <div class="image hidden center"><img src="images/infraX.PNG" alt="Schéma réseau AGGLO"></div>
                     <div class="text-content hidden">
-                        <h1 class="text3">Objectifs</h1>
+                        <h1 class="text3">Missions</h1>
                         <p class="text4">
-                            Mon portfolio a pour objectif de présenter mes compétences techniques, <br> mes projets réalisés et mon parcours professionnel dans <br> le cadre de ma formation en BTS SIO et de <br> l'épreuve E4 de celle-ci (évaluation des compétance pratiques)
+                            Le projet comprenait plusieurs missions clés : <br>
+                            <strong>Réseau VLAN</strong> — création de trois VLANs distincts sur switchs et routeurs Cisco physiques. <br>
+                            <strong>Active Directory</strong> — déploiement d'un domaine AGGLO.local sous Windows Server 2019 avec U.O., groupes, utilisateurs et répertoires partagés. <br>
+                            <strong>DHCP</strong> — configuration de deux étendues dynamiques par VLAN . <br>
+                            <strong>Serveurs Web</strong> — déploiement d'Apache2 sous Debian 13, accessible en interne et depuis Internet. <br>
+                            <strong>Supervision</strong> — installation et configuration de Zabbix 7.4 sous Debian 12 pour surveiller l'ensemble des hôtes du réseau.
+                        </p>
                     </div>
                 </div>
             </div>
 
             <!-- Slide 3 -->
-                <div class="slide trois">
-                    <div class="content">
-                        <div class="image hidden"><img src="images/portfolio3.png" alt="Langages"></div>
-                        <div class="text-content hidden">
-                            <h1 class="text5">En Résumer</h1>
-                            <p class="text6"> Ce projet m'a permis de mettre en pratique mes compétences en HTML pour la structure du site, CSS pour le design responsive et moderne, et JavaScript pour l'interactivité. J'ai également utilisé PHP pour la gestion dynamique du backend et Git/GitHub pour le versioning et l'hébergement. Enfin, j'ai développé des soft skills comme la gestion de projet, l'autonomie et la créativité.</p>
-                            
-                        </div>
+            <div class="slide trois">
+                <div class="content">
+                    <div class="image hidden"><img src="images/zabzab.PNG" alt="Interface Zabbix"></div>
+                    <div class="text-content hidden">
+                        <h1 class="text5">Conclusion</h1>
+                        <p class="text6">
+                            Ce projet nous a permis de mettre en pratique des compétences avancées en administration système et réseau dans un contexte professionnel réel.
+                            Nous avons configuré des équipements Cisco physiques (routeurs, switchs), déployé un domaine Windows Server 2019 (Active Directory, DHCP, répertoires partagés),
+                            des services Linux (Apache2 sous Debian 13, Zabbix 7.4 avec MariaDB sous Debian 12),
+                            et mis en place des règles de sécurité réseau (ACL, NAT, segmentation VLAN).
+                            Ce PPE a renforcé notre maîtrise des infrastructures d'entreprise, de la supervision réseau et de la gestion des accès utilisateurs.
+                        </p>
                     </div>
                 </div>
+            </div>
 
             <!-- Slide 4 : Page de contact -->
             <div class="slide cinq">
@@ -71,7 +85,7 @@
                         <p class="text2">
                             Vous pouvez me contacter via mon email, mes réseaux sociaux ou en remplissant le formulaire ci-dessous.
                         </p>
-                        
+
                         <div class="contact-icons hidden">
                             <a href="mailto:theo.defournier1@gmail.com" target="_blank" class="icon-link">
                                 <i class="fas fa-envelope"></i>
@@ -101,7 +115,7 @@
     <!-- Inclusion des scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="js/index.js"></script> <!-- Inclusion du fichier JavaScript externe -->
+    <script src="js/index.js"></script>
     <script>
         $(document).ready(function(){
             $('.carousel').slick({
