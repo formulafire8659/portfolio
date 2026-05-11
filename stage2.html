@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/box.css">
+    <link rel="icon" type="image/vnd.icon" href="images/clippe.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Stage LEMNIA</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Mon Portfolio</label>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projet.html">Projet/stages</a></li>
+            <li><a href="images/CV .pdf">CV</a></li>
+            <li><a href="veille.html">Veille</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <!-- Slide 1 — Présentation du stage -->
+        <div class="slide un">
+            <div class="content">
+                <div class="image hidden"><img src="images/lemnia.png" alt="Logo LEMNIA"></div>
+                <div class="text-content hidden">
+                    <h1 class="text1">Stage chez LEMNIA</h1>
+                    <p class="text2">
+                        Ce stage, réalisé chez LEMNIA, avait pour objectif de me former <br>
+                        aux outils utilisés par l'entreprise et de mettre en place <br>
+                        des infrastructures réseau professionnelles. <br>
+                        Il s'est déroulé sur plusieurs semaines avec des missions variées : <br>
+                        téléphonie IP, proxy web, cluster et pare-feu OPNsense.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2 — Semaine 1 : Formation 3CX -->
+        <div class="slide deux">
+            <div class="content">
+                <div class="image hidden"><img src="images/3CX.png" alt="Logo LEMNIA"></div>
+                <div class="text-content hidden">
+                    <h1 class="text3">Semaine 1 — Formation 3CX</h1>
+                    <p class="text4">
+                        La première semaine avait pour objectif de me former aux outils utilisés par LEMNIA. <br>
+                        <strong>Lundi :</strong> formation via les webinars officiels 3CX (hébergement, sauvegardes, mises à jour, rôles utilisateurs). <br>
+                        <strong>Mardi / Mercredi :</strong> suite de la formation 3CX et prise en main du logiciel — création d'un réseau de téléphonie IP avec des téléphones Yealink. <br>
+                        <strong>Jeudi :</strong> formation à ARTICA Protection via vidéo YouTube et documentation officielle. <br>
+                        <strong>Vendredi :</strong> prise en main de Proxmox, le lab virtuel interne de l'entreprise.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 — Semaine 3 : Création du proxy (DNS + intégration) -->
+        <div class="slide trois">
+            <div class="content">
+                <div class="image hidden"><img src="images/proxy.PNG" alt="Logo LEMNIA"></div>
+                <div class="text-content hidden">
+                    <h1 class="text5">Semaine 2 — Proxy ARTICA (1/2)</h1>
+                    <p class="text6">
+                        Création d'un proxy web lié à un Active Directory avec ARTICA. <br>
+                        <strong>Étape 1 :</strong> création des zones DNS dans le gestionnaire DNS Windows (zone directe stage.local et zone inverse 192.168.101.x). <br>
+                        <strong>Étape 2 :</strong> intégration du serveur proxy dans le DNS — ajout d'un enregistrement de type A pour artica-proxy (192.168.101.10) avec mise à jour du pointeur PTR associé. <br>
+                        <strong>Étape 3 :</strong> intégration du serveur proxy au domaine via le DNS primaire (192.168.101.15).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 — Semaine 3 : Connexion AD + client + résultat -->
+        <div class="slide deux">
+            <div class="content">
+                <div class="text-content hidden">
+                    <h1 class="text3">Semaine 3 — Proxy ARTICA (2/2)</h1>
+                    <p class="text4">
+                        <strong>Étape 4 :</strong> connexion au compte administrateur de l'AD — liaison Kerberos avec AD.stage.local (Windows Server 2019), compte tdefournier@stage.local. <br>
+                        <strong>Étape 5 :</strong> configuration du proxy sur le client Windows — adresse http://artica-proxy.stage.local port 3128. <br>
+                        <strong>Étape 6 :</strong> le proxy bloque correctement les sites non autorisés (Cache Access Denied via Artica Proxy 4.50). <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5 — Semaine 4 : Mise en place du cluster HaCluster -->
+        <div class="slide trois">
+            <div class="content">
+                <div class="image hidden"><img src="images/cluster.PNG" alt="Logo LEMNIA"></div>
+                <div class="text-content hidden">
+                    <h1 class="text5">Semaine 4 — Cluster HaCluster (1/2)</h1>
+                    <p class="text6">
+                        Mise en place d'un cluster ARTICA et réplication du proxy. <br>
+                        <strong>Étape 1 :</strong> création d'un serveur HaCluster depuis l'interface ARTICA — choix du mode HaCluster parmi les activités disponibles (Service Proxy, Pare-feu DNS, DNS Cache, Reverse-Proxy…). <br>
+                        <strong>Étape 2 :</strong> liaison avec le serveur Active Directory — authentification Kerberos, configuration du FQDN (dc1.domain.tld), suffix LDAP, synchronisation de l'heure avec l'AD. <br>
+                        <strong>Étape 3 :</strong> liaison avec les serveurs proxy maître (artica-proxy1 — 192.168.101.21) et esclave (artica-proxy2 — 192.168.101.22) via les ports 8090, 8091, 58787 et 9000.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6 — Semaine 4 : Cluster prêt + difficultés -->
+        <div class="slide deux">
+            <div class="content">
+                <div class="text-content hidden">
+                    <h1 class="text3">Semaine 4 — Cluster HaCluster (2/2)</h1>
+                    <p class="text4">
+                        <strong>Étape 4 :</strong> le cluster est opérationnel — le proxy bloque les sites correctement avec le message "Cache Access Denied" généré par artica-proxy1.stage.local. <br><br>
+                        <strong>Difficultés rencontrées :</strong> <br>
+                        — Impossibilité de connecter le serveur HaCluster à l'Active Directory. <br>
+                        — Réplication du proxy qui ne fonctionnait pas. <br>
+                        — Règle de filtrage qui ne fonctionnait pas. <br><br>
+                        <strong>Solutions apportées :</strong> <br>
+                        — Mise à jour du noyau du serveur vers une version plus récente. <br>
+                        — Recréation d'un proxy maître et esclave. <br>
+                        — Réinitialisation du client test.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7 — Semaine 5 : Installation OPNsense -->
+        <div class="slide trois">
+            <div class="content">
+                <div class="image hidden"><img src="images/opnsens.PNG" alt="Logo LEMNIA"></div>
+                <div class="text-content hidden">
+                    <h1 class="text5">Semaine 5 — OPNsense (1/2)</h1>
+                    <p class="text6">
+                        Contexte : réaliser une infrastructure réseau avec pare-feu OPNsense, deux VLANs (VLAN 200 → 192.168.200.0/24 et VLAN 201 → 192.168.201.0/24), un serveur web, un PC filtré par ARTICA et un AD. <br>
+                        <strong>Étape 1 :</strong> installation d'OPNsense 24.1 — mode UFS GPT/UEFI Hybrid. <br>
+                        <strong>Étape 2 :</strong> configuration initiale d'OPNsense via le menu console (Boot Multi user). <br>
+                        <strong>Étape 3 :</strong> assignation des interfaces réseau — vtnet0 (WAN), vtnet1 (OPT1/VLAN 200), vtnet2 (OPT2/VLAN 201).
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8 — Semaine 5 : Configuration OPNsense -->
+        <div class="slide deux">
+            <div class="content">
+                <div class="text-content hidden">
+                    <h1 class="text3">Semaine 5 — OPNsense (2/2)</h1>
+                    <p class="text4">
+                        <strong>Étape 4 :</strong> assignation des adresses IP — OPT1 (vtnet1_vlan200) → 192.168.200.1/24, OPT2 (vtnet2_vlan201) → 192.168.201.1/24, WAN → 192.168.101.16/24. <br>
+                        <strong>Étape 5 :</strong> activation des interfaces dans l'interface web OPNsense — configuration de l'adresse IPv4 statique 192.168.200.1/24 sur OPT1, passerelle auto-détectée. <br><br>
+                        <strong>Objectifs de l'infrastructure :</strong> <br>
+                        — Le client (CL1) accède au port 80 du serveur web. <br>
+                        — Le PC doit être filtré par ARTICA en mode Connecté. <br>
+                        — Le serveur web ne peut pas atteindre le VLAN 201. <br>
+                        — Le PC peut accéder au serveur web.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9 — Contact -->
+        <div class="slide cinq">
+            <div class="content">
+                <div class="text-content hidden">
+                    <h1 class="text1">Contactez-moi</h1>
+                    <p class="text2">
+                        Vous pouvez me contacter via mon email, mes réseaux sociaux ou en remplissant le formulaire ci-dessous.
+                    </p>
+
+                    <div class="contact-icons hidden">
+                        <a href="mailto:theo.defournier1@gmail.com" target="_blank" class="icon-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/formulafire8659" target="_blank" class="icon-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://instagram.com/formulafire86" target="_blank" class="icon-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="tel:0767548885" target="_blank" class="icon-link">
+                            <i class="fa fa-phone"></i>
+                        </a>
+                    </div>
+
+                    <form class="contact-form hidden" action="https://formspree.io/f/mqapkgje" method="POST">
+                        <input type="text" name="name" placeholder="Votre nom" required>
+                        <input type="email" name="email" placeholder="Votre email" required>
+                        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Inclusion des scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>

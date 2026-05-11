@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/box.css">
+    <link rel="icon" type="image/vnd.icon" href="images/clippe.ico">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>projet</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Mon Portfolio</label>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="projet.html">Projet/stages</a></li>
+            <li><a href="images/CV .pdf">CV</a></li>
+            <li><a href="veille.html">Veille</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+            <!-- Slide 1 -->
+            <div class="slide un">
+                <div class="content">
+                    <div class="image hidden"><img src="images/infraaa.png" alt="Logo LogoNet"></div>
+                    <div class="text-content hidden">
+                        <h1 class="text1">Optimisation du parc — OXAM</h1>
+                        <p class="text2">
+                            Projet réalisé en équipe (Mehmetcan Ari, Noah, Théo Defournier). Mise en place d'une infrastructure réseau optimisée pour l'entreprise OXAM avec trois départements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide deux">
+                <div class="content">
+                    <div class="image hidden center"><img src="images/serv.png" alt="Infrastructure LogoNet"></div>
+                    <div class="text-content hidden">
+                        <h1 class="text3">Missions</h1>
+                        <p class="text4">
+                            Le projet comprenait plusieurs missions clés, voici celles que j'ai réalisées : <br>
+                            <strong>Domaine Windows</strong> — Architecture réseau multi-services (Classe B Commercial/Livraison, Classe C Admin)<br>
+                            <strong>Services réseau</strong> — Serveur Active Directory Windows Server 2019 avec unités organisationnelles (OU), lecteurs réseaux et GPO <br>
+                            <strong>Serveur DHCP</strong> — Attribution d'IP dynamique via DHCP <br>
+                            <strong>PacketTracer</strong> — Simulation réseau via Packet Tracer<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide trois">
+                <div class="content">
+                    <div class="image hidden"><img src="images/gpo.PNG" alt="Schéma réseau LogoNet"></div>
+                    <div class="text-content hidden">
+                        <h1 class="text5">Conclusion</h1>
+                        <p class="text6">
+                            Ce projet nous a permis de concevoir et de mettre en œuvre une infrastructure réseau complète et fonctionnelle pour l’entreprise OXAM, répondant aux besoins spécifiques de ses trois départements. Grâce à l’intégration d’un serveur Windows Server 2019, d’Active Directory, du DHCP et des stratégies de groupe (GPO), nous avons assuré une gestion centralisée, sécurisée et efficace des ressources.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 4 : Page de contact -->
+            <div class="slide cinq">
+                <div class="content">
+                    <div class="text-content hidden">
+                        <h1 class="text1">Contactez-moi</h1>
+                        <p class="text2">
+                            Vous pouvez me contacter via mon email, mes réseaux sociaux ou en remplissant le formulaire ci-dessous.
+                        </p>
+
+                        <div class="contact-icons hidden">
+                            <a href="mailto:theo.defournier1@gmail.com" target="_blank" class="icon-link">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://github.com/formulafire8659" target="_blank" class="icon-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://instagram.com/formulafire86" target="_blank" class="icon-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="tel:0767548885" target="_blank" class="icon-link">
+                                <i class="fa fa-phone"></i>
+                            </a>
+                        </div>
+
+                        <form class="contact-form hidden" action="https://formspree.io/f/mqapkgje" method="POST">
+                            <input type="text" name="name" placeholder="Votre nom" required>
+                            <input type="email" name="email" placeholder="Votre email" required>
+                            <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+                            <button type="submit">Envoyer</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-- Inclusion des scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>
