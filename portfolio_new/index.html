@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Théo Defournier — BTS SIO SISR</title>
+<meta name="description" content="Portfolio de Théo Defournier, étudiant BTS SIO option SISR — administration systèmes, réseaux et infrastructures.">
+<link rel="icon" type="image/vnd.icon" href="images/clippe.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <div class="nav-id"><span class="dot"></span> theo.defournier — sisr</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#profil">Profil</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#contact">Contact</a>
+      <a href="images/CV .pdf" class="nav-cta">CV ↓</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="profil">
+  <svg class="hero-net" viewBox="0 0 600 640" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g stroke="#4FD1C5" stroke-opacity="0.28" stroke-width="1">
+      <line x1="60" y1="80" x2="240" y2="150"/>
+      <line x1="240" y1="150" x2="470" y2="90"/>
+      <line x1="240" y1="150" x2="200" y2="330"/>
+      <line x1="200" y1="330" x2="40" y2="420"/>
+      <line x1="200" y1="330" x2="400" y2="380"/>
+      <line x1="400" y1="380" x2="520" y2="290"/>
+      <line x1="400" y1="380" x2="470" y2="540"/>
+      <line x1="200" y1="330" x2="170" y2="560"/>
+    </g>
+    <g fill="#4FD1C5">
+      <circle cx="60" cy="80" r="3.5"/>
+      <circle cx="240" cy="150" r="5" fill-opacity="0.9"/>
+      <circle cx="470" cy="90" r="3.5"/>
+      <circle cx="200" cy="330" r="6" fill-opacity="0.9"/>
+      <circle cx="40" cy="420" r="3.5"/>
+      <circle cx="400" cy="380" r="5" fill-opacity="0.9"/>
+      <circle cx="520" cy="290" r="3.5"/>
+      <circle cx="470" cy="540" r="3.5"/>
+      <circle cx="170" cy="560" r="3.5"/>
+    </g>
+  </svg>
+  <div class="wrap">
+    <div class="rise rise-1">
+      <div class="eyebrow-line"><span class="rule"></span> BTS SIO — option SISR</div>
+      <h1>Théo Defournier construit et <span>sécurise</span> des infrastructures réseau.</h1>
+      <p class="hero-role">Systèmes · Réseaux · Supervision — en recherche d'alternance</p>
+      <p class="hero-desc">
+        Étudiant en BTS Services Informatiques aux Organisations, option Systèmes et Réseaux, après un bac STI2D.
+        Je conçois, déploie et supervise des infrastructures (Active Directory, DNS/DHCP, pare-feu, supervision Zabbix)
+        dans le cadre de projets d'études et de stages en entreprise.
+      </p>
+      <div class="hero-actions">
+        <a href="#projets" class="btn btn-primary">Voir les projets</a>
+        <a href="#contact" class="btn">Me contacter</a>
+      </div>
+    </div>
+
+    <div class="status-panel rise rise-2">
+      <div class="status-head">
+        <span>fiche_technique.log</span>
+        <span class="status-ok">actif</span>
+      </div>
+      <div class="status-photo"><img src="images/moi.jpg" alt="Photo de Théo Defournier"></div>
+      <div class="status-rows">
+        <div class="status-row"><span class="k">formation</span><span class="v">BTS SIO SISR</span></div>
+        <div class="status-row"><span class="k">bac</span><span class="v">STI2D</span></div>
+        <div class="status-row"><span class="k">systèmes</span><span class="v">Windows Server / Linux</span></div>
+        <div class="status-row"><span class="k">réseau</span><span class="v">Cisco / OPNsense</span></div>
+        <div class="status-row"><span class="k">statut</span><span class="v">disponible — alternance</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-stats rise rise-3">
+    <div class="hero-stat"><div class="num">7</div><div class="lbl">projets d'infrastructure</div></div>
+    <div class="hero-stat"><div class="num">2</div><div class="lbl">stages en entreprise</div></div>
+    <div class="hero-stat"><div class="num">4</div><div class="lbl">domaines de compétence</div></div>
+    <div class="hero-stat"><div class="num">3</div><div class="lbl">ans de formation</div></div>
+  </div>
+</section>
+
+<!-- ============ COMPETENCES ============ -->
+<section id="competences">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Compétences</h2>
+      <span class="section-tag mono">04 domaines</span>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-block">
+        <span class="skill-label">Systèmes</span>
+        <ul>
+          <li>Windows Server 2019 / 2022</li>
+          <li>Active Directory, GPO, DFS</li>
+          <li>Linux (Debian) — administration</li>
+          <li>Terminal, diagnostic, scripts</li>
+        </ul>
+      </div>
+      <div class="skill-block">
+        <span class="skill-label">Réseaux</span>
+        <ul>
+          <li>DNS (Bind9), DHCP</li>
+          <li>Cisco (routeurs, switchs, VLAN)</li>
+          <li>Pare-feu OPNsense, ACL, NAT</li>
+          <li>Proxy ARTICA, cluster HA</li>
+        </ul>
+      </div>
+      <div class="skill-block">
+        <span class="skill-label">Sécurité &amp; supervision</span>
+        <ul>
+          <li>Zabbix — supervision, alertes</li>
+          <li>Sauvegarde RAID 5 (mdadm)</li>
+          <li>Veille incidents &amp; cybersécurité</li>
+          <li>Segmentation, DMZ</li>
+        </ul>
+      </div>
+      <div class="skill-block">
+        <span class="skill-label">Développement</span>
+        <ul>
+          <li>HTML / CSS / Python / C++</li>
+          <li>Git &amp; GitHub</li>
+          <li>VS Code</li>
+          <li>Packet Tracer, VMware</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJETS ============ -->
+<section id="projets">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Projets &amp; ateliers professionnels</h2>
+      <span class="section-tag mono">7 projets</span>
+    </div>
+    <p class="section-lede" style="margin-top:-32px; margin-bottom:48px;">Infrastructures conçues et déployées dans le cadre du BTS. Cliquez sur un projet pour le détail des missions.</p>
+
+    <div class="projects-list">
+
+      <details class="project">
+        <summary class="project-summary">
+          <span class="project-tag">AP·1</span>
+          <span class="project-thumb"><img src="images/infraaa.png" alt=""></span>
+          <span class="project-title">Optimisation du parc — OXAM<small>Infrastructure réseau multi-services, 3 départements</small></span>
+          <span class="project-stack">
+            <span class="chip">AD</span><span class="chip">GPO</span><span class="chip">DHCP</span>
+          </span>
+          <span class="project-caret">+</span>
+        </summary>
+        <div class="project-body">
+          <img src="images/infraaa.png" alt="Infrastructure OXAM">
+          <div class="project-detail">
+            <h4>Contexte</h4>
+            <p>Projet réalisé en équipe (Mehmetcan Ari, Noah, Théo Defournier) : mise en place d'une infrastructure réseau optimisée pour l'entreprise OXAM, organisée en trois départements distincts.</p>
+            <h4>Missions réalisées</h4>
+            <p>Architecture réseau multi-services (classe B commercial/livraison, classe C administration) · déploiement d'un serveur Active Directory Windows Server 2019 avec unités organisationnelles, lecteurs réseau et GPO · serveur DHCP pour l'attribution dynamique d'adresses IP · simulation de l'ensemble sous Packet Tracer.</p>
+            <h4>Bilan</h4>
+            <p>Une infrastructure complète et fonctionnelle répondant aux besoins des trois départements, avec une gestion centralisée, sécurisée et efficace des ressources grâce à l'AD, au DHCP et aux GPO.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="project">
+        <summary class="project-summary">
+          <span class="project-tag">AP·2</span>
+          <span class="project-thumb"><img src="images/logonet.PNG" alt=""></span>
+          <span class="project-title">Administration réseau — LogoNet<small>PPE en environnement virtualisé VMware</small></span>
+          <span class="project-stack">
+            <span class="chip">DNS</span><span class="chip">Apache2</span><span class="chip">RAID5</span>
+          </span>
+          <span class="project-caret">+</span>
+        </summary>
+        <div class="project-body">
+          <img src="images/logonet.PNG" alt="Infrastructure LogoNet">
+          <div class="project-detail">
+            <h4>Contexte</h4>
+            <p>PPE réalisé avec Paule-Marie Batsotsa et Evan Murzeau : concevoir et déployer une infrastructure informatique performante et sécurisée pour la société LogoNet, entièrement sous VMware.</p>
+            <h4>Missions réalisées</h4>
+            <p>Domaine <span class="mono">LogoNet.local</span> sous Windows Server 2019 (Active Directory, GPO, scripts de session par groupe) · serveur DNS Bind9 (zones directe et inverse) et serveur DHCP sous Debian · serveur web Apache2 · serveur de sauvegarde sécurisé en RAID 5 via mdadm.</p>
+            <h4>Bilan</h4>
+            <p>Mise en pratique de l'administration système et réseau en conditions réelles, avec un renforcement de la maîtrise de la gestion de domaine et de la sécurisation des données.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="project">
+        <summary class="project-summary">
+          <span class="project-tag">AP·3</span>
+          <span class="project-thumb"><img src="images/infraPPE3.png" alt=""></span>
+          <span class="project-title">Qualité de service informatique — MDS49<small>Maison Départementale des Sports, pour le CDOS 49</small></span>
+          <span class="project-stack">
+            <span class="chip">Zabbix</span><span class="chip">Cron/SSH</span><span class="chip">Intranet</span>
+          </span>
+          <span class="project-caret">+</span>
+        </summary>
+        <div class="project-body">
+          <img src="images/infraPPE3.png" alt="Infrastructure MDS49">
+          <div class="project-detail">
+            <h4>Contexte</h4>
+            <p>Mission confiée par le Conseil départemental de Maine-et-Loire via le groupe OXAM : améliorer l'infrastructure informatique de la MDS49 pour mieux répondre aux besoins des associations sportives locales.</p>
+            <h4>Missions réalisées</h4>
+            <p>Supervision — installation et configuration de Zabbix avec alertes par mail · sauvegarde — automatisation quotidienne des répertoires critiques via crontab et SSH · intranet — déploiement d'un site <span class="mono">mds49.local</span> avec analyse des logs et protection contre le brute force.</p>
+            <h4>Bilan</h4>
+            <p>Windows Server 2022 (AD, DFS, réplication), services Linux (DHCP, DNS Bind9, Apache, Zabbix) et sauvegardes automatisées : ce PPE a renforcé ma maîtrise de la supervision réseau et de la sécurité des systèmes.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="project">
+        <summary class="project-summary">
+          <span class="project-tag">AP·4</span>
+          <span class="project-thumb"><img src="images/infraX.PNG" alt=""></span>
+          <span class="project-title">Infrastructure réseau — Comité d'Agglomération<small>Refonte réseau pour le groupe OXAM</small></span>
+          <span class="project-stack">
+            <span class="chip">DMZ</span><span class="chip">Zabbix</span><span class="chip">Apache2</span>
+          </span>
+          <span class="project-caret">+</span>
+        </summary>
+        <div class="project-body">
+          <img src="images/infraX.PNG" alt="Schéma réseau AGGLO">
+          <div class="project-detail">
+            <h4>Contexte</h4>
+            <p>Mission confiée au groupe OXAM : moderniser l'infrastructure informatique du Comité d'Agglomération (AGGLO), dont le réseau devenu obsolète ne répondait plus aux besoins des employés.</p>
+            <h4>Missions réalisées</h4>
+            <p>Active Directory — domaine <span class="mono">AGGLO.local</span> sous Windows Server 2019 (U.O., groupes, répertoires partagés) · serveur web Apache2 sous Debian 13, accessible en interne et depuis Internet · supervision Zabbix 7.4 sous Debian 12 pour l'ensemble des hôtes du réseau.</p>
+            <h4>Bilan</h4>
+            <p>Réseau complet avec services distincts (Culture/Sport, administratif, DMZ) et plusieurs serveurs Windows et Linux, incluant équipements Cisco, ACL, NAT et segmentation VLAN.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="project">
+        <summary class="project-summary">
+          <span class="project-tag">SPACE</span>
+          <span class="project-thumb"><img src="images/astropi.png" alt=""></span>
+          <span class="project-title">Astro Pi — Mission Space Lab<small>ESA / Fondation Raspberry Pi, réalisé en première</small></span>
+          <span class="project-stack">
+            <span class="chip">Python</span><span class="chip">Raspberry Pi</span><span class="chip">IA</span>
+          </span>
+          <span class="project-caret">+</span>
+        </summary>
+        <div class="project-body">
+          <img src="images/astropi.png" alt="Programme Astro Pi">
+          <div class="project-detail">
+            <h4>Contexte</h4>
+            <p>Le programme Astro Pi permet aux jeunes de mener des expériences scientifiques à bord de l'ISS via des Raspberry Pi. Objectif de mon équipe en Mission Space Lab : détecter les feux de forêt depuis l'espace.</p>
+            <h4>Réalisations</h4>
+            <p>Programme de prise de photos à intervalles réguliers via la caméra · IA de détection de fumée (indice d'incendie) · enregistrement des données (photo, coordonnées GPS, date/heure) dans un fichier .csv, le tout sur Raspberry Pi 4 équipé du Sense HAT.</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="project">
+        <summary class="project-summary">
+          <span class="project-tag">STAGE</span><span class="project-thumb"><img src="images/micro1.PNG" alt=""></span>
+          <span class="project-title">Stage — Micro‑repaire<small>Maintenance informatique, 1ère année</small></span>
+          <span class="project-stack">
+            <span class="chip">GLPI</span><span class="chip">Hardware</span>
+          </span>
+          <span class="project-caret">+</span>
+        </summary>
+        <div class="project-body">
+          <img src="images/micro1.PNG" alt="Stage Micro-repaire">
+          <div class="project-detail">
+            <h4>Missions</h4>
+            <p>Maintenance logicielle (diagnostic via terminal Linux, mises à jour et réinstallations) · gestion de parc avec GLPI, suivi des tickets et inventaire · installation logicielle sur postes Windows · montage PC et réparation d'ordinateurs portables (écrans, dalles, composants).</p>
+          </div>
+        </div>
+      </details>
+
+      <details class="project">
+        <summary class="project-summary">
+          <span class="project-tag">STAGE</span><span class="project-thumb"><img src="images/lemnia.png" alt=""></span>
+          <span class="project-title">Stage — LEMNIA<small>Infrastructures réseau professionnelles, 2ème année</small></span>
+          <span class="project-stack">
+            <span class="chip">ARTICA</span><span class="chip">OPNsense</span><span class="chip">3CX</span>
+          </span>
+          <span class="project-caret">+</span>
+        </summary>
+        <div class="project-body">
+          <img src="images/lemnia.png" alt="Stage LEMNIA">
+          <div class="project-detail">
+            <h4>Missions</h4>
+            <p>Téléphonie IP avec 3CX et téléphones Yealink · proxy web ARTICA lié à un Active Directory (zones DNS, intégration domaine <span class="mono">stage.local</span>) · cluster haute disponibilité ARTICA (HaCluster) avec réplication proxy maître/esclave · pare-feu OPNsense avec segmentation VLAN (200/201).</p>
+          </div>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Contact</h2>
+      <span class="section-tag mono">réponse sous 48h</span>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-panel">
+        <div class="status-head">
+          <span>canaux_de_contact</span>
+          <span class="status-ok">disponible</span>
+        </div>
+        <div class="contact-channels">
+          <a href="mailto:theo.defournier1@gmail.com" class="channel">
+            <span class="ic"><i class="fas fa-envelope"></i></span>
+            <span><span class="label">email</span><span class="value">theo.defournier1@gmail.com</span></span>
+            <i class="fas fa-arrow-up-right-from-square go"></i>
+          </a>
+          <a href="tel:0767548885" class="channel">
+            <span class="ic"><i class="fas fa-phone"></i></span>
+            <span><span class="label">téléphone</span><span class="value">07 67 54 88 85</span></span>
+            <i class="fas fa-arrow-up-right-from-square go"></i>
+          </a>
+          <a href="https://github.com/formulafire8659" target="_blank" rel="noopener" class="channel">
+            <span class="ic"><i class="fab fa-github"></i></span>
+            <span><span class="label">github</span><span class="value">formulafire8659</span></span>
+            <i class="fas fa-arrow-up-right-from-square go"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/théo-defournier-a6353238a" target="_blank" rel="noopener" class="channel">
+            <span class="ic"><i class="fab fa-linkedin-in"></i></span>
+            <span><span class="label">linkedin</span><span class="value">Théo Defournier</span></span>
+            <i class="fas fa-arrow-up-right-from-square go"></i>
+          </a>
+        </div>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/mqapkgje" method="POST">
+        <div class="form-row">
+          <input type="text" name="name" placeholder="Votre nom" required>
+          <input type="email" name="email" placeholder="Votre email" required>
+        </div>
+        <textarea name="message" placeholder="Votre message" rows="6" required></textarea>
+        <button type="submit">Envoyer le message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:12px;">
+    <span>© 2026 Théo Defournier</span>
+    <span>BTS SIO — option SISR</span>
+  </div>
+</footer>
+
+<script>
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }));
+</script>
+</body>
+</html>
